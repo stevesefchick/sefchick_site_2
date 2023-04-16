@@ -17,10 +17,6 @@ html, body {
     align-items: center;
 }
 
-ul {
-    margin: 0;
-}
-
 a {
     color: #58a8d6;
     text-decoration: none;
@@ -31,10 +27,14 @@ a:hover {
     color: #af4adf;
 }
 
+ul {
+    margin: 0;
+}
+
 #content {
-    text-align: left;
-    padding: 41px;
     background-color: #161616;
+    text-align: left;
+    padding: 45px;
     position: relative;
     overflow: hidden;
 }
@@ -73,7 +73,7 @@ a:hover {
   }
 }
 
-#name {
+#stevename {
     font-size: 32px;
     color: #DFDFDF;
     text-align: center;
