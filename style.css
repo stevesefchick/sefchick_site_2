@@ -1,0 +1,143 @@
+html, body {
+    padding: 0;
+    margin: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: #111111;
+    font-family: 'Chivo Mono', monospace;
+
+    font-size: 16px;
+    color: #ADADAD;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+}
+
+a {
+    color: #58a8d6;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+a:hover {
+    color: #af4adf;
+}
+
+#content {
+    text-align: left;
+    padding: 41px;
+    background-color: #161616;
+    position: relative;
+    overflow: hidden;
+}
+
+#content::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    
+    animation: 15s rotate linear infinite;
+    transform-origin: center;
+    top: -50%;
+    left: -50%;
+    background-image: conic-gradient(#065348, #014646, #0d3064, #310941, #4d2b4d, #01463c);
+    z-index: 1;
+}
+
+#content::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    z-index: 2;
+    background: #161616;
+}
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+#name {
+    font-size: 32px;
+    color: #DFDFDF;
+    text-align: center;
+}
+
+#subtitle {
+    width: 64ch;
+    white-space: nowrap;
+    font-style: italic;
+    text-align: center;
+}
+
+#about-header {
+    margin-top: 16px;
+}
+
+#about-list {
+    margin-top: 8px;
+}
+
+#work-header {
+    margin-top: 16px;
+}
+
+#work-list {
+    margin-top: 8px;
+}
+
+#find-me-header {
+    margin-top: 16px;
+}
+
+#find-me-list {
+    margin-top: 8px;
+}
+
+#heart {
+    height: 20px;
+    margin-left: .7ch;
+    margin-right: .7ch;
+}
+
+#footer {
+    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+}
+
+#outer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.subheader {
+    font-size: 20px;
+    color: #DFDFDF;
+}
+#content>* {
+  position: relative;
+  z-index: 3;
+}
