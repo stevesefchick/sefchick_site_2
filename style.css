@@ -80,8 +80,6 @@ ul {
 }
 
 #subtitle {
-    width: 64ch;
-    white-space: nowrap;
     font-style: italic;
     text-align: center;
 }
@@ -125,6 +123,7 @@ ul {
     margin-bottom: 15px;
     position: absolute;
     bottom: 0;
+    color: #111111;
 }
 
 #outer {
